@@ -1,0 +1,4 @@
+com/xphreak/controller/PersonController.class
+com/xphreak/domain/PersonDTO.class
+com/xphreak/service/ChangePersonService.class
+com/xphreak/service/impl/ChangePersonServiceImpl.class
