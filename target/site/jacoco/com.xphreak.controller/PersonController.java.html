@@ -14,21 +14,21 @@ public class PersonController {
     private final ChangePersonService changePersonService;
     
     @Autowired
-<span class="nc" id="L17">    public PersonController(final ChangePersonService changePersonService) {</span>
-<span class="nc" id="L18">        this.changePersonService = changePersonService;</span>
-<span class="nc" id="L19">    }</span>
+<span class="fc" id="L17">    public PersonController(final ChangePersonService changePersonService) {</span>
+<span class="fc" id="L18">        this.changePersonService = changePersonService;</span>
+<span class="fc" id="L19">    }</span>
     
     @RequestMapping(value=&quot;/person.html&quot;, method = RequestMethod.GET)
     public ModelAndView handlerShowPerson() {
-<span class="nc" id="L23">        final ModelAndView modelAndView = new ModelAndView(&quot;person&quot;);</span>
-<span class="nc" id="L24">        final PersonDTO thePerson = new PersonDTO();</span>
-<span class="nc" id="L25">        thePerson.setFirstName(&quot;Zolt&quot;);</span>
-<span class="nc" id="L26">        thePerson.setLastName(&quot;Egete&quot;);</span>
+<span class="fc" id="L23">        final ModelAndView modelAndView = new ModelAndView(&quot;person&quot;);</span>
+<span class="fc" id="L24">        final PersonDTO thePerson = new PersonDTO();</span>
+<span class="fc" id="L25">        thePerson.setFirstName(&quot;Zolt&quot;);</span>
+<span class="fc" id="L26">        thePerson.setLastName(&quot;Egete&quot;);</span>
         
-<span class="nc" id="L28">        final PersonDTO changedPerson = changePersonService.changePerson(thePerson);</span>
-<span class="nc" id="L29">        modelAndView.addObject(&quot;thePerson&quot;, changedPerson);</span>
+<span class="fc" id="L28">        final PersonDTO changedPerson = changePersonService.changePerson(thePerson);</span>
+<span class="fc" id="L29">        modelAndView.addObject(&quot;thePerson&quot;, changedPerson);</span>
         
-<span class="nc" id="L31">        return modelAndView;</span>
+<span class="fc" id="L31">        return modelAndView;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.1.201405082137</span></div></body></html>
